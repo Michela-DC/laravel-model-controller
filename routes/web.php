@@ -13,6 +13,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'MovieController@index' )->name('home');
+//In questo modo creo il collegamento tra la rotta e il metodo index del controller, quindi quando arriva una richiesta alla rotta '/', dico a laravel che deve andare a recuperare la funzione index che è dentro al controller (che in questo progetto ho chiamato MovieController)
