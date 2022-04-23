@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #191919;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.page-title {
+  color: white;
+  padding: 30px 0;
+}
+
+.cards-container {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+
+.cards-container .card-wrapper {
+  border: 2px solid coral;
+  width: 22.75%;
+  padding: 30px 30px 10px 30px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.cards-container .card-wrapper dl {
+  margin-bottom: 20px;
+}
+
+.cards-container .card-wrapper dl .title {
+  margin-bottom: 5px;
+}
+
+.cards-container .card-wrapper dl dt {
+  color: crimson;
+  font-weight: bold;
+}
+
+.cards-container .card-wrapper dl dd {
+  color: white;
+}
+

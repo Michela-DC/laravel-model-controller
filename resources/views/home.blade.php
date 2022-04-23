@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
     <title>Movies</title>
 </head>
 <body>
     
     <main>
         <div class="main-container">
-            <h1>Home page</h1>
+            <h1 class="page-title">Movies</h1>
         
             <div class="cards-container">
 
@@ -19,7 +20,7 @@
                         <div class="movie-info">
                             <dl class="title-wrapper">
                                 <dt>Titolo: </dt>
-                                <dd lass="title">
+                                <dd class="title">
                                     {{-- {{$movie['title']}} per stampare dal db posso usare o la sintassi degli array associativi --}}
                                     {{-- oppure posso usare la sintassi della programmazione ad oggetti quindi accedendoci come se fosse un'istanza --}}
                                     {{$movie->title}} 
@@ -30,6 +31,13 @@
                                     {{$movie->original_title}} 
                                 </dd>
                             </dl>
+
+                            {{-- <dl class="orginal-title-wrapper">
+                                <dt>Titolo originale: </dt>
+                                <dd class="original-title">
+                                    {{$movie->original_title}} 
+                                </dd>
+                            </dl> --}}
                 
                             <dl class="nationality-wrapper">
                                 <dt>Nazionalità: </dt>
@@ -48,7 +56,7 @@
                             <dl class="vote-wrapper">
                                 <dt>Voto:</dt>
                                 <dd class="vote">
-                                    {{$movie->nationality}} 
+                                    {{$movie->vote}} 
                                 </dd>
                             </dl>
                         </div>
