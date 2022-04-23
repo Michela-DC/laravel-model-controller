@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Movie; //quando nel metodo index uso il model devo recuperarlo usando use
+use App\Models\Movie; //quando nel metodo index uso il model devo recuperarlo con use + il namespace del model
 use Illuminate\Http\Request;
 
 class MovieController extends Controller
@@ -12,7 +12,7 @@ class MovieController extends Controller
 
         //recupero i dati dal db attraverso il model
         $movies = Movie::all(); //all() metodo per recuperare tutti i campi della tabella
-        dd($movies);
+        // dd($movies);
 
         //ritorno della vista home che laravel va a cercare dentro a resources, dentro views
         return view('home', compact('movies')); 
