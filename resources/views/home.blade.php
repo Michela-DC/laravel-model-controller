@@ -31,13 +31,6 @@
                                     {{$movie->original_title}} 
                                 </dd>
                             </dl>
-
-                            {{-- <dl class="orginal-title-wrapper">
-                                <dt>Titolo originale: </dt>
-                                <dd class="original-title">
-                                    {{$movie->original_title}} 
-                                </dd>
-                            </dl> --}}
                 
                             <dl class="nationality-wrapper">
                                 <dt>Nazionalità: </dt>
